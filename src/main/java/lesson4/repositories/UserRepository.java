@@ -1,6 +1,6 @@
 package lesson4.repositories;
 
-import lesson4.models.Teacher;
+import lesson4.models.Student;
 import lesson4.models.User;
 
 import java.util.List;
@@ -12,5 +12,5 @@ public interface UserRepository <T extends User> {
 
     int remove(String fullName);
 
-    List<Teacher> getAllByGroupTitle(String groupTitle);
+    List<Student> getAllByGroupTitle(String groupTitle);
 }
