@@ -1,6 +1,7 @@
 package lesson4.repositories;
 
 import lesson4.models.Student;
+import lesson4.models.Teacher;
 
 import java.util.ArrayList;
 import java.util.Iterator;
@@ -42,7 +43,7 @@ public class StudentRepository implements UserRepository<Student> {
     }
 
     @Override
-    public List<Student> getAllByGroupTitle(String groupTitle) {
+    public List<Teacher> getAllByGroupTitle(String groupTitle) {
         return students.stream()
                 .filter(student -> student.getGroupTitle().equals(groupTitle))
                 .collect(Collectors.toList());
